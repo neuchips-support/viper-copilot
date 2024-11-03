@@ -1,0 +1,129 @@
+[1730646599] Log start
+[1730646599] Cmd: ./cpu_main -m ../../cpu_model/taide_7b.gguf -c 4096 -p "<s>[INST] <<SYS>>
+你是一個來自台灣的AI助理，你的名字是 TAIDE，樂於以台灣人的立場幫助使用者，只會用繁體中文回答問題，盡可能簡短地回答。使用以下上下文來回答使用者的問題。如果你不知道答案，就說你不知道，不要試圖編造答案。
+<</SYS>>
+
+Context: Super Mario (Japanese: スーパーマリオ, Hepburn: Sūpā Mario) is a series of platform video games created by Nintendo featuring their mascot, Mario. Alternatively called the Super Mario Bros. (スーパーマリオブラザーズ, Sūpā Mario Burazāzu) series or simply the Mario (マリオ) series, it is the central series of the greater Mario franchise.
+Super Mario World (スーパーマリオワールド, Sūpā Mario Wārudo), subtitled Super Mario Bros. 4 (スーパーマリオブラザーズ4, Sūpā Mario Burazāzu fō) for its original Japanese release, is a 1990 platform video game developed and published by Nintendo as a pack-in launch title for the Super Nintendo Entertainment System (SNES) and is the fifth game in the Super Mario series.
+Super Mario Bros. (Japanese: スーパーマリオブラザーズ, Hepburn: Sūpā Mario Burazāzu) is a 1985 platform video game internally developed by Nintendo R&D4 and published by Nintendo as a pseudo-sequel to the 1983 game Mario Bros. It was originally released in Japan for the Family Computer on September 13, 1985, and later that year for the Nintendo Entertainment System in North America and Europe on May 15, 1987, and Australia later in 1987. It is the first of the Super Mario series of games.
+The Mario franchise is a media franchise consisting of video games published and produced by Nintendo starring the fictional character Mario.  The franchise's other forms of media include several television series and a feature film. It was originally created by game designer Shigeru Miyamoto with the arcade Donkey Kong, released on July 9, 1981. The games have been developed by a variety of developers including Nintendo, Hudson Soft, and AlphaDream.
+Question: Tell me the history of Super Mario只回覆有用的答案，不回覆任何其他內容。 [/INST]" -n 512 -b 32 --temp 0 --prompt-print-skip
+[1730646599] main: build = 0 (unknown)
+[1730646599] main: built with cc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0 for x86_64-linux-gnu
+[1730646599] main: seed  = 1730646599
+[1730646599] main: llama backend init
+[1730646599] main: load the model and apply lora adapter, if any
+[1730646599] llama_model_loader: loaded meta data with 21 key-value pairs and 291 tensors from ../../cpu_model/taide_7b.gguf (version GGUF V3 (latest))
+[1730646599] llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+[1730646599] llama_model_loader: - kv   0:                       general.architecture str              = llama
+[1730646599] llama_model_loader: - kv   1:                               general.name str              = LLaMA v2
+[1730646599] llama_model_loader: - kv   2:                       llama.context_length u32              = 4096
+[1730646599] llama_model_loader: - kv   3:                     llama.embedding_length u32              = 4096
+[1730646599] llama_model_loader: - kv   4:                          llama.block_count u32              = 32
+[1730646599] llama_model_loader: - kv   5:                  llama.feed_forward_length u32              = 11008
+[1730646599] llama_model_loader: - kv   6:                 llama.rope.dimension_count u32              = 128
+[1730646599] llama_model_loader: - kv   7:                 llama.attention.head_count u32              = 32
+[1730646599] llama_model_loader: - kv   8:              llama.attention.head_count_kv u32              = 32
+[1730646599] llama_model_loader: - kv   9:     llama.attention.layer_norm_rms_epsilon f32              = 0.000010
+[1730646599] llama_model_loader: - kv  10:                       llama.rope.freq_base f32              = 10000.000000
+[1730646599] llama_model_loader: - kv  11:                          general.file_type u32              = 1
+[1730646599] llama_model_loader: - kv  12:                       tokenizer.ggml.model str              = llama
+[1730646599] llama_model_loader: - kv  13:                      tokenizer.ggml.tokens arr[str,56064]   = ["<unk>", "<s>", "</s>", "<0x00>", "<...
+[1730646599] llama_model_loader: - kv  14:                      tokenizer.ggml.scores arr[f32,56064]   = [0.000000, 0.000000, 0.000000, 0.0000...
+[1730646599] llama_model_loader: - kv  15:                  tokenizer.ggml.token_type arr[i32,56064]   = [2, 3, 3, 6, 6, 6, 6, 6, 6, 6, 6, 6, ...
+[1730646599] llama_model_loader: - kv  16:                tokenizer.ggml.bos_token_id u32              = 1
+[1730646599] llama_model_loader: - kv  17:                tokenizer.ggml.eos_token_id u32              = 2
+[1730646599] llama_model_loader: - kv  18:               tokenizer.ggml.add_bos_token bool             = true
+[1730646599] llama_model_loader: - kv  19:               tokenizer.ggml.add_eos_token bool             = false
+[1730646599] llama_model_loader: - kv  20:                    tokenizer.chat_template str              = {% if messages[0]['role'] == 'system'...
+[1730646599] llama_model_loader: - type  f32:   65 tensors
+[1730646599] llama_model_loader: - type  f16:  226 tensors
+[1730646599] llm_load_vocab: mismatch in special tokens definition ( 304/56064 vs 303/56064 ).
+[1730646599] llm_load_print_meta: format           = GGUF V3 (latest)
+[1730646599] llm_load_print_meta: arch             = llama
+[1730646599] llm_load_print_meta: vocab type       = SPM
+[1730646599] llm_load_print_meta: n_vocab          = 56064
+[1730646599] llm_load_print_meta: n_merges         = 0
+[1730646599] llm_load_print_meta: n_ctx_train      = 4096
+[1730646599] llm_load_print_meta: n_embd           = 4096
+[1730646599] llm_load_print_meta: n_head           = 32
+[1730646599] llm_load_print_meta: n_head_kv        = 32
+[1730646599] llm_load_print_meta: n_layer          = 32
+[1730646599] llm_load_print_meta: n_rot            = 128
+[1730646599] llm_load_print_meta: n_embd_head_k    = 128
+[1730646599] llm_load_print_meta: n_embd_head_v    = 128
+[1730646599] llm_load_print_meta: n_gqa            = 1
+[1730646599] llm_load_print_meta: n_embd_k_gqa     = 4096
+[1730646599] llm_load_print_meta: n_embd_v_gqa     = 4096
+[1730646599] llm_load_print_meta: f_norm_eps       = 0.0e+00
+[1730646599] llm_load_print_meta: f_norm_rms_eps   = 1.0e-05
+[1730646599] llm_load_print_meta: f_clamp_kqv      = 0.0e+00
+[1730646599] llm_load_print_meta: f_max_alibi_bias = 0.0e+00
+[1730646599] llm_load_print_meta: n_ff             = 11008
+[1730646599] llm_load_print_meta: n_expert         = 0
+[1730646599] llm_load_print_meta: n_expert_used    = 0
+[1730646599] llm_load_print_meta: rope scaling     = linear
+[1730646599] llm_load_print_meta: freq_base_train  = 10000.0
+[1730646599] llm_load_print_meta: freq_scale_train = 1
+[1730646599] llm_load_print_meta: n_yarn_orig_ctx  = 4096
+[1730646599] llm_load_print_meta: rope_finetuned   = unknown
+[1730646599] llm_load_print_meta: model type       = 7B
+[1730646599] llm_load_print_meta: model ftype      = F16
+[1730646599] llm_load_print_meta: model params     = 6.94 B
+[1730646599] llm_load_print_meta: model size       = 12.92 GiB (16.00 BPW) 
+[1730646599] llm_load_print_meta: general.name     = LLaMA v2
+[1730646599] llm_load_print_meta: BOS token        = 1 '<s>'
+[1730646599] llm_load_print_meta: EOS token        = 2 '</s>'
+[1730646599] llm_load_print_meta: UNK token        = 0 '<unk>'
+[1730646599] llm_load_print_meta: LF token         = 13 '<0x0A>'
+[1730646599] llm_load_tensors: ggml ctx size =    0.11 MiB
+[1730646599] llm_load_tensors: offloading 0 repeating layers to GPU
+[1730646599] llm_load_tensors: offloaded 0/33 layers to GPU
+[1730646599] llm_load_tensors:        CPU buffer size = 13229.02 MiB
+[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] .[1730646599] 
+[1730646599] llama_new_context_with_model: n_ctx      = 4096
+[1730646599] llama_new_context_with_model: freq_base  = 10000.0
+[1730646599] llama_new_context_with_model: freq_scale = 1
+[1730646600] llama_kv_cache_init:        CPU KV buffer size =  2048.00 MiB
+[1730646600] llama_new_context_with_model: KV self size  = 2048.00 MiB, K (f16): 1024.00 MiB, V (f16): 1024.00 MiB
+[1730646600] llama_new_context_with_model:        CPU input buffer size   =     1.02 MiB
+[1730646600] llama_new_context_with_model:        CPU compute buffer size =    19.25 MiB
+[1730646600] llama_new_context_with_model: graph splits (measure): 1
+[1730646600] warming up the model with an empty run
+[1730646600] n_ctx: 4096
+[1730646600] 
+[1730646600] system_info: n_threads = 10 / 20 | AVX = 1 | AVX_VNNI = 1 | AVX2 = 1 | AVX512 = 0 | AVX512_VBMI = 0 | AVX512_VNNI = 0 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | SSSE3 = 1 | VSX = 0 | 
+[1730646600] add_bos: 1
+[1730646600] tokenize the prompt
+[1730646600] prompt: "<s>[INST] <<SYS>>
+你是一個來自台灣的AI助理，你的名字是 TAIDE，樂於以台灣人的立場幫助使用者，只會用繁體中文回答問題，盡可能簡短地回答。使用以下上下文來回答使用者的問題。如果你不知道答案，就說你不知道，不要試圖編造答案。
+<</SYS>>
+
+Context: Super Mario (Japanese: スーパーマリオ, Hepburn: Sūpā Mario) is a series of platform video games created by Nintendo featuring their mascot, Mario. Alternatively called the Super Mario Bros. (スーパーマリオブラザーズ, Sūpā Mario Burazāzu) series or simply the Mario (マリオ) series, it is the central series of the greater Mario franchise.
+Super Mario World (スーパーマリオワールド, Sūpā Mario Wārudo), subtitled Super Mario Bros. 4 (スーパーマリオブラザーズ4, Sūpā Mario Burazāzu fō) for its original Japanese release, is a 1990 platform video game developed and published by Nintendo as a pack-in launch title for the Super Nintendo Entertainment System (SNES) and is the fifth game in the Super Mario series.
+Super Mario Bros. (Japanese: スーパーマリオブラザーズ, Hepburn: Sūpā Mario Burazāzu) is a 1985 platform video game internally developed by Nintendo R&D4 and published by Nintendo as a pseudo-sequel to the 1983 game Mario Bros. It was originally released in Japan for the Family Computer on September 13, 1985, and later that year for the Nintendo Entertainment System in North America and Europe on May 15, 1987, and Australia later in 1987. It is the first of the Super Mario series of games.
+The Mario franchise is a media franchise consisting of video games published and produced by Nintendo starring the fictional character Mario.  The franchise's other forms of media include several television series and a feature film. It was originally created by game designer Shigeru Miyamoto with the arcade Donkey Kong, released on July 9, 1981. The games have been developed by a variety of developers including Nintendo, Hudson Soft, and AlphaDream.
+Question: Tell me the history of Super Mario只回覆有用的答案，不回覆任何其他內容。 [/INST]"
+[1730646600] tokens: [ '':1, '':1, '[':29961, 'INST':25580, ']':29962, ' <<':3532, 'SY':14816, 'S':29903, '>>':6778, '':13, '':33013, '':32054, '':33072, '':34764, 'AI':23869, '':34261, '':30214, '':33016, '':34850, '':30392, ' T':323, 'A':29909, 'IDE':22027, '':30214, '':41766, '':40444, '':30651, '':34763, '':30210, '':46550, '':38009, '':33052, '':30214, '':34711, '':30406, '':47516, '':55031, '':32408, '':35616, '':35211, '':30214, '':45513, '':34744, '':46891, '':45835, '':30533, '':35616, '':30267, '':33050, '':32821, '':32176, '':30333, '':33064, '':46706, '':33052, '':45256, '':30267, '':36558, '':32314, '':46708, '':30214, '':31238, '':50722, '':30919, '':32314, '':30214, '':32326, '':50635, '':31442, '':31420, '':46708, '':30267, '':13, '<':29966, '</':829, 'SY':14816, 'S':29903, '>>':6778, '':13, '':13, 'Context':2677, ':':29901, ' Super':5670, ' Mario':16262, ' (':313, 'J':29967, 'apan':21419, 'ese':968, ':':29901, ' ':29871, '':30255, '':30185, '':30715, '':30185, '':30388, '':30303, '':30514, ',':29892, ' He':940, 'p':29886, 'burn':18712, ':':29901, ' S':317, '':30132, 'p':29886, '':30107, ' Mario':16262, ')':29897, ' is':338, ' a':263, ' series':3652, ' of':310, ' platform':7481, ' video':4863, ' games':8090, ' created':2825, ' by':491, ' N':405, 'intendo':28481, ' featuring':23425, ' their':1009, ' mas':5516, 'cot':26235, ',':29892, ' Mario':16262, '.':29889, ' Alternatively':20360, ' called':2000, ' the':278, ' Super':5670, ' Mario':16262, ' B':350, 'ros':1883, '.':29889, ' (':313, '':30255, '':30185, '':30715, '':30185, '':30388, '':30303, '':30514, '':30582, '':30281, '':31123, '':30185, '':30719, ',':29892, ' S':317, '':30132, 'p':29886, '':30107, ' Mario':16262, ' Bur':6640, 'az':834, '':30107, 'zu':6951, ')':29897, ' series':3652, ' or':470, ' simply':3763, ' the':278, ' Mario':16262, ' (':313, '':30388, '':30303, '':30514, ')':29897, ' series':3652, ',':29892, ' it':372, ' is':338, ' the':278, ' central':6555, ' series':3652, ' of':310, ' the':278, ' greater':7621, ' Mario':16262, ' franch':23272, 'ise':895, '.':29889, '':13, 'Super':19111, ' Mario':16262, ' World':2787, ' (':313, '':30255, '':30185, '':30715, '':30185, '':30388, '':30303, '':30514, '':31028, '':30185, '':30258, '':30335, ',':29892, ' S':317, '':30132, 'p':29886, '':30107, ' Mario':16262, ' W':399, '':30107, 'r':29878, 'udo':5333, '),':511, ' subt':12059, 'itled':17707, ' Super':5670, ' Mario':16262, ' B':350, 'ros':1883, '.':29889, ' ':29871, '4':29946, ' (':313, '':30255, '':30185, '':30715, '':30185, '':30388, '':30303, '':30514, '':30582, '':30281, '':31123, '':30185, '':30719, '4':29946, ',':29892, ' S':317, '':30132, 'p':29886, '':30107, ' Mario':16262, ' Bur':6640, 'az':834, '':30107, 'zu':6951, ' f':285, '':30099, ')':29897, ' for':363, ' its':967, ' original':2441, ' Japanese':10369, ' release':6507, ',':29892, ' is':338, ' a':263, ' ':29871, '1':29896, '9':29929, '9':29929, '0':29900, ' platform':7481, ' video':4863, ' game':3748, ' developed':8906, ' and':322, ' published':6369, ' by':491, ' N':405, 'intendo':28481, ' as':408, ' a':263, ' pack':4870, '-':29899, 'in':262, ' launch':6826, ' title':3611, ' for':363, ' the':278, ' Super':5670, ' N':405, 'intendo':28481, ' Entertainment':18189, ' System':2184, ' (':313, 'SN':19296, 'ES':2890, ')':29897, ' and':322, ' is':338, ' the':278, ' fifth':18615, ' game':3748, ' in':297, ' the':278, ' Super':5670, ' Mario':16262, ' series':3652, '.':29889, '':13, 'Super':19111, ' Mario':16262, ' B':350, 'ros':1883, '.':29889, ' (':313, 'J':29967, 'apan':21419, 'ese':968, ':':29901, ' ':29871, '':30255, '':30185, '':30715, '':30185, '':30388, '':30303, '':30514, '':30582, '':30281, '':31123, '':30185, '':30719, ',':29892, ' He':940, 'p':29886, 'burn':18712, ':':29901, ' S':317, '':30132, 'p':29886, '':30107, ' Mario':16262, ' Bur':6640, 'az':834, '':30107, 'zu':6951, ')':29897, ' is':338, ' a':263, ' ':29871, '1':29896, '9':29929, '8':29947, '5':29945, ' platform':7481, ' video':4863, ' game':3748, ' internally':25106, ' developed':8906, ' by':491, ' N':405, 'intendo':28481, ' R':390, '&':29987, 'D':29928, '4':29946, ' and':322, ' published':6369, ' by':491, ' N':405, 'intendo':28481, ' as':408, ' a':263, ' pseudo':17381, '-':29899, 'sequ':6831, 'el':295, ' to':304, ' the':278, ' ':29871, '1':29896, '9':29929, '8':29947, '3':29941, ' game':3748, ' Mario':16262, ' B':350, 'ros':1883, '.':29889, ' It':739, ' was':471, ' originally':10437, ' released':5492, ' in':297, ' Japan':5546, ' for':363, ' the':278, ' Family':14662, ' Computer':20972, ' on':373, ' September':3839, ' ':29871, '1':29896, '3':29941, ',':29892, ' ':29871, '1':29896, '9':29929, '8':29947, '5':29945, ',':29892, ' and':322, ' later':2678, ' that':393, ' year':1629, ' for':363, ' the':278, ' N':405, 'intendo':28481, ' Entertainment':18189, ' System':2184, ' in':297, ' North':4644, ' America':6813, ' and':322, ' Europe':4092, ' on':373, ' May':2610, ' ':29871, '1':29896, '5':29945, ',':29892, ' ':29871, '1':29896, '9':29929, '8':29947, '7':29955, ',':29892, ' and':322, ' Australia':8314, ' later':2678, ' in':297, ' ':29871, '1':29896, '9':29929, '8':29947, '7':29955, '.':29889, ' It':739, ' is':338, ' the':278, ' first':937, ' of':310, ' the':278, ' Super':5670, ' Mario':16262, ' series':3652, ' of':310, ' games':8090, '.':29889, '':13, 'The':1576, ' Mario':16262, ' franch':23272, 'ise':895, ' is':338, ' a':263, ' media':5745, ' franch':23272, 'ise':895, ' consisting':19849, ' of':310, ' video':4863, ' games':8090, ' published':6369, ' and':322, ' produced':7371, ' by':491, ' N':405, 'intendo':28481, ' st':380, 'arring':23693, ' the':278, ' fict':26797, 'ional':1848, ' character':2931, ' Mario':16262, '.':29889, ' ':29871, ' The':450, ' franch':23272, 'ise':895, ''':29915, 's':29879, ' other':916, ' forms':7190, ' of':310, ' media':5745, ' include':3160, ' several':3196, ' television':11456, ' series':3652, ' and':322, ' a':263, ' feature':4682, ' film':2706, '.':29889, ' It':739, ' was':471, ' originally':10437, ' created':2825, ' by':491, ' game':3748, ' designer':23383, ' Sh':1383, 'iger':4087, 'u':29884, ' Mi':5493, 'y':29891, 'am':314, 'oto':3747, ' with':411, ' the':278, ' ar':564, 'cade':6332, ' Don':3872, 'key':1989, ' Kong':12026, ',':29892, ' released':5492, ' on':373, ' July':5468, ' ':29871, '9':29929, ',':29892, ' ':29871, '1':29896, '9':29929, '8':29947, '1':29896, '.':29889, ' The':450, ' games':8090, ' have':505, ' been':1063, ' developed':8906, ' by':491, ' a':263, ' variety':12875, ' of':310, ' developers':18777, ' including':3704, ' N':405, 'intendo':28481, ',':29892, ' Hudson':25850, ' So':1105, 'ft':615, ',':29892, ' and':322, ' Al':838, 'pha':2026, 'D':29928, 'ream':1633, '.':29889, '':13, 'Question':16492, ':':29901, ' Tell':24948, ' me':592, ' the':278, ' history':4955, ' of':310, ' Super':5670, ' Mario':16262, '':31557, '':35617, '':30417, '':44780, '':46708, '':30214, '':30413, '':35617, '':32852, '':33813, '':33708, '':30267, ' [':518, '/':29914, 'INST':25580, ']':29962 ]
+[1730646600] recalculate the cached logits (check): embd_inp.empty() false, n_matching_session_tokens 0, embd_inp.size() 579, session_tokens.size() 0, embd_inp.size() 579
+[1730646600] inp_pfx: [ '':1, ' ':29871, '':13, '':13, '##':2277, '#':29937, ' Inst':2799, 'ruction':4080, ':':29901, '':13, '':13 ]
+[1730646600] inp_sfx: [ ' ':29871, '':13, '':13, '##':2277, '#':29937, ' Response':13291, ':':29901, '':13, '':13 ]
+[1730646600] cml_pfx: [ '':1, ' ':29871, '':13, '<':29966, '|':29989, 'im':326, '_':29918, 'start':2962, '|':29989, '>':29958, 'user':1792, '':13 ]
+[1730646600] cml_sfx: [ ' <':529, '|':29989, 'im':326, '_':29918, 'end':355, '|':29989, '>':29958, '':13, '<':29966, '|':29989, 'im':326, '_':29918, 'start':2962, '|':29989, '>':29958, 'ass':465, 'istant':22137, '':13 ]
+[1730646600] sampling: 
+	repeat_last_n = 64, repeat_penalty = 1.100, frequency_penalty = 0.000, presence_penalty = 0.000
+	top_k = 40, tfs_z = 1.000, top_p = 0.950, min_p = 0.050, typical_p = 1.000, temp = 0.000
+	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000
+[1730646600] sampling order: 
+CFG -> Penalties -> top_k -> tfs_z -> typical_p -> top_p -> min_p -> temp 
+[1730646600] generate: n_ctx = 4096, n_batch = 32, n_predict = 512, n_keep = 0
+[1730646600] 
+
+[1730646600] embd_inp.size(): 579, n_consumed: 0
+[1730646600] eval: [ '':1, '':1, '[':29961, 'INST':25580, ']':29962, ' <<':3532, 'SY':14816, 'S':29903, '>>':6778, '':13, '':33013, '':32054, '':33072, '':34764, 'AI':23869, '':34261, '':30214, '':33016, '':34850, '':30392, ' T':323, 'A':29909, 'IDE':22027, '':30214, '':41766, '':40444, '':30651, '':34763, '':30210, '':46550, '':38009, '':33052 ]
+[1730646605] n_past = 32
+[1730646605] embd_inp.size(): 579, n_consumed: 32
+[1730646605] eval: [ '':30214, '':34711, '':30406, '':47516, '':55031, '':32408, '':35616, '':35211, '':30214, '':45513, '':34744, '':46891, '':45835, '':30533, '':35616, '':30267, '':33050, '':32821, '':32176, '':30333, '':33064, '':46706, '':33052, '':45256, '':30267, '':36558, '':32314, '':46708, '':30214, '':31238, '':50722, '':30919 ]
+[1730646610] n_past = 64
+[1730646610] embd_inp.size(): 579, n_consumed: 64
+[1730646610] eval: [ '':32314, '':30214, '':32326, '':50635, '':31442, '':31420, '':46708, '':30267, '':13, '<':29966, '</':829, 'SY':14816, 'S':29903, '>>':6778, '':13, '':13, 'Context':2677, ':':29901, ' Super':5670, ' Mario':16262, ' (':313, 'J':29967, 'apan':21419, 'ese':968, ':':29901, ' ':29871, '':30255, '':30185, '':30715, '':30185, '':30388, '':30303 ]

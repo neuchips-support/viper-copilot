@@ -1,0 +1,1 @@
+KERNEL=="neuchips_ai_epr-[0-9]*", MODE="0666"
